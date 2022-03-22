@@ -35,14 +35,158 @@ $(function() {
         $(this).addClass("active");
     });
 
-    $(".opti-list ul li").on('click', function(e) {
-        $(this).find('input[type=checkbox]').prop("checked", !$(this).find('input[type=checkbox]').prop("checked"));
 
-        if ($(this).hasClass("active")) {
-            $(this).removeClass("active");
-        } else {
-            $(this).addClass("active");
-        }
+
+
+
+
+
+
+
+
+
+
+
+    $(".q1 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q1 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+
+
+    $(".q2 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q2 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q3 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q3 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q4 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q4 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q5 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q5 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q6 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q6 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q7 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q7 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q8 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q8 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q9 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q9 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q10 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q10 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q11 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q11 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q12 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q12 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q13 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q13 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q14 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q14 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q15 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q15 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q16 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q16 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q17 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q17 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q18 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q18 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q19 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q19 ul li").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".q20 ul li").on('click', function(e) {
+        $(this).find('input[type=radio]').prop("checked", !$(this).find('input[type=radio]').prop("checked"));
+
+        $(".q20 ul li").removeClass("active");
+        $(this).addClass("active");
     });
 
     $('input[type=checkbox]').click(function(e) {
