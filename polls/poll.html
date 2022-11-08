@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="polls/animate.css">
 	<link rel="stylesheet" href="polls/fontawesome-all.css">
 	<link rel="stylesheet" href="polls/style.css">
+	<link rel="icon" href="polls/logo_blank.png">
+
 
 	<!-- <link rel="stylesheet" type="text/css" href="polls/switch.css"> -->
 </head>
@@ -37,8 +39,11 @@
 					<li class="multisteps-form__progress-btn">
 						<span>4</span>
 					</li>
-					<li class="multisteps-form__progress-btn last">
+					<li class="multisteps-form__progress-btn">
 						<span>5</span>
+					</li>
+					<li class="multisteps-form__progress-btn last">
+						<span>6</span>
 					</li>
 				</ul>
 			</div>
@@ -52,8 +57,96 @@
 							<div class="form-content pera-content">
 								<div class="step-inner-content">
 									<span class="step-no">Step 1</span>
+									<h2>What language is most comfortable for you?</h2>
+									<p>Please, note that while we have only two official translations (Ukrainian and English), we offer opportunity to take the test in any other language using Google Translate's API. However, we do not take responsibility for any language related issues caused by this option.</p>
+									<div class="step-box">
+										<div class="row">
+											<div class="col-md-4">
+												<label
+													class="step-box-content bg-white text-center relative-position active">
+													<span class="step-box-icon">
+														<img src="polls/ukraine.png" alt="">
+													</span>
+													<span class="step-box-text">
+														Я хочу пройти тест українською
+													</span>
+													<span class="service-check-option">
+														<span><input type="radio" name="service_name"
+																value="Corporate Services"></span>
+													</span>
+												</label>
+											</div>
+											<div class="col-md-4">
+												<label class="step-box-content bg-white text-center relative-position">
+													<span class="step-box-icon">
+														<img src="polls/uk.png" alt="">
+													</span>
+													<span class="step-box-text">
+														 I want to take test in English
+													</span>
+													<!-- <span>conditional</span> -->
+													<span class="service-check-option">
+														<span><input type="radio" name="service_name"
+																value="Freelancing Services" checked="checked"></span>
+													</span>
+												</label>
+											</div>
+											<div class="col-md-4">
+												<label class="step-box-content bg-white text-center relative-position">
+													<span class="step-box-icon">
+														<img src="polls/other.png" alt="">
+													</span>
+													<span class="step-box-text">
+														Other language (choose from a dropdown)
+													</span>
+													<span class="service-check-option">
+														<span><input type="radio" name="service_name"
+																value="Development Services"></span>
+													</span>
+												</label>
+											</div>
+										</div>
+
+									</div>
+									<div class="language-select">
+										<p>Please, choose the language you are the most comfortable to take the test. </p>
+										<select name="languages">
+											<option selected="selected">English</option>
+											<option>Ukrainian</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.inner -->
+						<div class="actions">
+							<ul>
+								<li class="disable" aria-disabled="true"><span class="js-btn-next" title="NEXT">Backward
+										<i class="fa fa-arrow-right"></i></span></li>
+								<li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-right"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- div 2 TEST-->
+				<div class="multisteps-form__panel" data-animation="slideHorz">
+					<div class="wizard-forms">
+						<div class="inner pb-100 clearfix">
+							<div class="form-content pera-content">
+								<div class="step-inner-content">
+									<span class="step-no bottom-line">Step 2</span>
+									<div class="step-progress float-right">
+										<span>2 of 6 completed</span>
+										<div class="step-progress-bar">
+											<div class="progress">
+												<div class="progress-bar"></div>
+											</div>
+										</div>
+									</div>
 									<h2>What was your relationship with the traumatic event?</h2>
-									<p>Although everyone in the country can be afected by the war, people can be affected differently based on their location and relationship with the war.</p>
+									<p>Although everyone in the country can be afected by the war, people can be
+										affected differently based on their location and relationship with the war.</p>
 									<div class="step-box">
 										<div class="row">
 											<div class="col-md-4">
@@ -105,21 +198,15 @@
 
 									</div>
 
-									<div class="language-select">
-										<p>Please, choose the language you are the most comfortable to take the test. </p>
-										<select name="languages">
-											<option selected="selected">English</option>
-											<option>Ukrainian</option>
-										</select>
-									</div>
+
 								</div>
 							</div>
 						</div>
 						<!-- /.inner -->
 						<div class="actions">
 							<ul>
-								<li class="disable" aria-disabled="true"><span class="js-btn-next" title="NEXT">Backward
-										<i class="fa fa-arrow-right"></i></span></li>
+								<li><span class="js-btn-prev" title="BACK"><i class="fa fa-arrow-left"></i> BACK </span>
+								</li>
 								<li><span class="js-btn-next" title="NEXT">NEXT <i class="fa fa-arrow-right"></i></span>
 								</li>
 							</ul>
@@ -132,9 +219,9 @@
 						<div class="inner pb-100 clearfix">
 							<div class="form-content pera-content">
 								<div class="step-inner-content">
-									<span class="step-no bottom-line">Step 2</span>
+									<span class="step-no bottom-line">Step 3</span>
 									<div class="step-progress float-right">
-										<span>2 of 5 completed</span>
+										<span>3 of 6 completed</span>
 										<div class="step-progress-bar">
 											<div class="progress">
 												<div class="progress-bar"></div>
@@ -142,35 +229,127 @@
 										</div>
 									</div>
 
-									<h2>Do you want to share?</h2>
-									<p>The follwoing page is completely optional. Feel free to share as much as you are comfortable with, so we can make your expirience afterwards more personalized.</p>
-
-									<div class="form-inner-area">
-										<input type="text" name="full_name" class="form-control" minlength="2"
-											placeholder="First and last name">
-										<input type="email" name="email" class="form-control"
-											placeholder="Email Address">
-										<input type="text" name="phone" placeholder="Phone">
-									</div>
-									<div class="gender-selection">
-										<h3>Gender:</h3>
-										<label>
-											<input type="radio" name="gender" value="Male">
-											<span class="checkmark"></span>Male
-										</label>
-										<label>
-											<input type="radio" name="gender" value="Female">
-											<span class="checkmark"></span>Female
-										</label>
-										<label>
-											<input type="radio" name="gender" value="Other">
-											<span class="checkmark"></span>Other
-										</label>
+									<h2>In the past month, how much were you bothered by ...</h2>
+									<p>Answer the questions below to the best of your ability. Your honest answers will
+										help get accurate results.</p>
+									<div class="budget-area">
+										<p>Irritable behavior, angry outbursts, or acting aggressively?
+										</p>
+										<div class="opti-list q15">
+											<ul class="d-flex">
+												<li class="bg-white active"><input type="radio" name="anger" value="4"
+														checked="checked">Extremely
+												</li>
+												<li class="bg-white"><input type="radio" name="anger" value="3">Quite a
+													bit</li>
+												<li class="bg-white"><input type="radio" name="anger"
+														value="2">Moderately</li>
+												<li class="bg-white"><input type="radio" name="anger" value="1">A little
+													bit</li>
+												<li class="bg-white"><input type="radio" name="anger" value="0">Not at
+													all</li>
+											</ul>
+										</div>
 									</div>
 
-									<div class="comment-box">
-										<textarea name="extra-message"
-											placeholder="Use this space to leave some additional information, comments, suggestions, or feedback."></textarea>
+									<div class="budget-area">
+										<p>Taking too many risks or doing things that could cause you harm?
+										</p>
+										<div class="opti-list q16">
+											<ul class="d-flex">
+												<li class="bg-white active"><input type="radio" name="risks" value="4"
+														checked="checked">Extremely
+												</li>
+												<li class="bg-white"><input type="radio" name="risks" value="3">Quite a
+													bit</li>
+												<li class="bg-white"><input type="radio" name="risks"
+														value="2">Moderately</li>
+												<li class="bg-white"><input type="radio" name="risks" value="1">A little
+													bit</li>
+												<li class="bg-white"><input type="radio" name="risks" value="0">Not at
+													all</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="budget-area">
+										<p>Being “superalert” or watchful or on guard?
+										</p>
+										<div class="opti-list q17">
+											<ul class="d-flex">
+												<li class="bg-white active"><input type="radio" name="superalert"
+														value="4" checked="checked">Extremely
+												</li>
+												<li class="bg-white"><input type="radio" name="superalert"
+														value="3">Quite a bit</li>
+												<li class="bg-white"><input type="radio" name="superalert"
+														value="2">Moderately</li>
+												<li class="bg-white"><input type="radio" name="superalert" value="1">A
+													little bit</li>
+												<li class="bg-white"><input type="radio" name="superalert" value="0">Not
+													at all</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="budget-area">
+										<p>Feeling jumpy or easily startled?
+										</p>
+										<div class="opti-list q18">
+											<ul class="d-flex">
+												<li class="bg-white active"><input type="radio" name="jumpy" value="4"
+														checked="checked">Extremely
+												</li>
+												<li class="bg-white"><input type="radio" name="jumpy" value="3">Quite a
+													bit</li>
+												<li class="bg-white"><input type="radio" name="jumpy"
+														value="2">Moderately</li>
+												<li class="bg-white"><input type="radio" name="jumpy" value="1">A little
+													bit</li>
+												<li class="bg-white"><input type="radio" name="jumpy" value="0">Not at
+													all</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="budget-area">
+										<p>Having difficulty concentrating?
+										</p>
+										<div class="opti-list q19">
+											<ul class="d-flex">
+												<li class="bg-white active"><input type="radio" name="concentrating"
+														value="4" checked="checked">Extremely
+												</li>
+												<li class="bg-white"><input type="radio" name="concentrating"
+														value="3">Quite a bit</li>
+												<li class="bg-white"><input type="radio" name="concentrating"
+														value="2">Moderately</li>
+												<li class="bg-white"><input type="radio" name="concentrating"
+														value="1">A little bit</li>
+												<li class="bg-white"><input type="radio" name="concentrating"
+														value="0">Not at all</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="budget-area">
+										<p>Trouble falling or staying asleep?
+										</p>
+										<div class="opti-list q20">
+											<ul class="d-flex">
+												<li class="bg-white active"><input type="radio" name="sleeping"
+														value="4" checked="checked">Extremely
+												</li>
+												<li class="bg-white"><input type="radio" name="sleeping" value="3">Quite
+													a bit</li>
+												<li class="bg-white"><input type="radio" name="sleeping"
+														value="2">Moderately</li>
+												<li class="bg-white"><input type="radio" name="sleeping" value="1">A
+													little bit</li>
+												<li class="bg-white"><input type="radio" name="sleeping" value="0">Not
+													at all</li>
+											</ul>
+										</div>
 									</div>
 
 								</div>
@@ -193,9 +372,9 @@
 						<div class="inner pb-100 clearfix">
 							<div class="form-content pera-content">
 								<div class="step-inner-content">
-									<span class="step-no bottom-line">Step 3</span>
+									<span class="step-no bottom-line">Step 4</span>
 									<div class="step-progress float-right">
-										<span>3 of 5 completed</span>
+										<span>4 of 6 completed</span>
 										<div class="step-progress-bar">
 											<div class="progress">
 												<div class="progress-bar" style="width:40%"></div>
@@ -203,7 +382,8 @@
 										</div>
 									</div>
 									<h2>In the past month, how much were you bothered by ...</h2>
-									<p>Answer the questions below to the best of your ability. Your honest answers will help get accurate results. </p>
+									<p>Answer the questions below to the best of your ability. Your honest answers will
+										help get accurate results. </p>
 
 									<div class="budget-area">
 										<p>Repeated, disturbing, and unwanted memories of the stressful experience? </p>
@@ -360,9 +540,9 @@
 						<div class="inner pb-100 clearfix">
 							<div class="form-content pera-content">
 								<div class="step-inner-content">
-									<span class="step-no bottom-line">Step 4</span>
+									<span class="step-no bottom-line">Step 5</span>
 									<div class="step-progress float-right">
-										<span>4 of 5 completed</span>
+										<span>5 of 6 completed</span>
 										<div class="step-progress-bar">
 											<div class="progress">
 												<div class="progress-bar" style="width:70%"></div>
@@ -370,7 +550,8 @@
 										</div>
 									</div>
 									<h2>In the past month, how much were you bothered by ...</h2>
-									<p>Answer the questions below to the best of your ability. Your honest answers will help get accurate results.</p>
+									<p>Answer the questions below to the best of your ability. Your honest answers will
+										help get accurate results.</p>
 
 
 									<div class="budget-area">
@@ -533,143 +714,54 @@
 						</div>
 					</div>
 				</div>
+
 				<!-- div 5 -->
 				<div class="multisteps-form__panel" data-animation="slideHorz">
 					<div class="wizard-forms">
 						<div class="inner pb-100 clearfix">
 							<div class="form-content pera-content">
 								<div class="step-inner-content">
-									<span class="step-no bottom-line">Step 5</span>
+									<span class="step-no bottom-line">Step 6</span>
 									<div class="step-progress float-right">
-										<span>5 of 5 completed</span>
+										<span>6 of 6 completed</span>
 										<div class="step-progress-bar">
 											<div class="progress">
 												<div class="progress-bar" style="width:100%"></div>
 											</div>
 										</div>
 									</div>
-									<h2>Final Step! In the past month, how much were you bothered by ...</h2>
-									<p>Answer the questions below to the best of your ability. Your honest answers will help get accurate results.</p>
-									<div class="budget-area">
-										<p>Irritable behavior, angry outbursts, or acting aggressively?
-										</p>
-										<div class="opti-list q15">
-											<ul class="d-flex">
-												<li class="bg-white active"><input type="radio" name="anger" value="4"
-														checked="checked">Extremely
-												</li>
-												<li class="bg-white"><input type="radio" name="anger" value="3">Quite a
-													bit</li>
-												<li class="bg-white"><input type="radio" name="anger"
-														value="2">Moderately</li>
-												<li class="bg-white"><input type="radio" name="anger" value="1">A little
-													bit</li>
-												<li class="bg-white"><input type="radio" name="anger" value="0">Not at
-													all</li>
-											</ul>
-										</div>
+									<h2>Do you want to share?</h2>
+									<p>The follwoing page is completely optional. Feel free to share as much as you are
+										comfortable with, so we can make your expirience afterwards more personalized.
+									</p>
+
+									<div class="form-inner-area">
+										<input type="text" name="full_name" class="form-control" minlength="2"
+											placeholder="First and last name">
+										<input type="email" name="email" class="form-control"
+											placeholder="Email Address">
+										<input type="text" name="phone" placeholder="Phone">
+									</div>
+									<div class="gender-selection">
+										<h3>Gender:</h3>
+										<label>
+											<input type="radio" name="gender" value="Male">
+											<span class="checkmark"></span>Male
+										</label>
+										<label>
+											<input type="radio" name="gender" value="Female">
+											<span class="checkmark"></span>Female
+										</label>
+										<label>
+											<input type="radio" name="gender" value="Other">
+											<span class="checkmark"></span>Other
+										</label>
 									</div>
 
-									<div class="budget-area">
-										<p>Taking too many risks or doing things that could cause you harm?
-										</p>
-										<div class="opti-list q16">
-											<ul class="d-flex">
-												<li class="bg-white active"><input type="radio" name="risks" value="4"
-														checked="checked">Extremely
-												</li>
-												<li class="bg-white"><input type="radio" name="risks" value="3">Quite a
-													bit</li>
-												<li class="bg-white"><input type="radio" name="risks"
-														value="2">Moderately</li>
-												<li class="bg-white"><input type="radio" name="risks" value="1">A little
-													bit</li>
-												<li class="bg-white"><input type="radio" name="risks" value="0">Not at
-													all</li>
-											</ul>
-										</div>
+									<div class="comment-box">
+										<textarea name="extra-message"
+											placeholder="Use this space to leave some additional information, comments, suggestions, or feedback."></textarea>
 									</div>
-
-									<div class="budget-area">
-										<p>Being “superalert” or watchful or on guard?
-										</p>
-										<div class="opti-list q17">
-											<ul class="d-flex">
-												<li class="bg-white active"><input type="radio" name="superalert"
-														value="4" checked="checked">Extremely
-												</li>
-												<li class="bg-white"><input type="radio" name="superalert"
-														value="3">Quite a bit</li>
-												<li class="bg-white"><input type="radio" name="superalert"
-														value="2">Moderately</li>
-												<li class="bg-white"><input type="radio" name="superalert" value="1">A
-													little bit</li>
-												<li class="bg-white"><input type="radio" name="superalert" value="0">Not
-													at all</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="budget-area">
-										<p>Feeling jumpy or easily startled?
-										</p>
-										<div class="opti-list q18">
-											<ul class="d-flex">
-												<li class="bg-white active"><input type="radio" name="jumpy" value="4"
-														checked="checked">Extremely
-												</li>
-												<li class="bg-white"><input type="radio" name="jumpy" value="3">Quite a
-													bit</li>
-												<li class="bg-white"><input type="radio" name="jumpy"
-														value="2">Moderately</li>
-												<li class="bg-white"><input type="radio" name="jumpy" value="1">A little
-													bit</li>
-												<li class="bg-white"><input type="radio" name="jumpy" value="0">Not at
-													all</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="budget-area">
-										<p>Having difficulty concentrating?
-										</p>
-										<div class="opti-list q19">
-											<ul class="d-flex">
-												<li class="bg-white active"><input type="radio" name="concentrating"
-														value="4" checked="checked">Extremely
-												</li>
-												<li class="bg-white"><input type="radio" name="concentrating"
-														value="3">Quite a bit</li>
-												<li class="bg-white"><input type="radio" name="concentrating"
-														value="2">Moderately</li>
-												<li class="bg-white"><input type="radio" name="concentrating"
-														value="1">A little bit</li>
-												<li class="bg-white"><input type="radio" name="concentrating"
-														value="0">Not at all</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="budget-area">
-										<p>Trouble falling or staying asleep?
-										</p>
-										<div class="opti-list q20">
-											<ul class="d-flex">
-												<li class="bg-white active"><input type="radio" name="sleeping"
-														value="4" checked="checked">Extremely
-												</li>
-												<li class="bg-white"><input type="radio" name="sleeping" value="3">Quite
-													a bit</li>
-												<li class="bg-white"><input type="radio" name="sleeping"
-														value="2">Moderately</li>
-												<li class="bg-white"><input type="radio" name="sleeping" value="1">A
-													little bit</li>
-												<li class="bg-white"><input type="radio" name="sleeping" value="0">Not
-													at all</li>
-											</ul>
-										</div>
-									</div>
-
 
 								</div>
 							</div>
